@@ -21,6 +21,12 @@ gh api graphql -f query='mutation { addSubIssue(input: {issueId: "PARENT_ID", su
 
 # Mark ISSUE as blocked by BLOCKER
 gh api graphql -f query='mutation { addBlockedBy(input: {issueId: "ISSUE_ID", blockingIssueId: "BLOCKER_ID"}) { clientMutationId } }'
+
+# Remove CHILD from PARENT's sub-issues
+gh api graphql -f query='mutation { removeSubIssue(input: {issueId: "PARENT_ID", subIssueId: "CHILD_ID"}) { clientMutationId } }'
+
+# Remove blocked-by relationship (ISSUE is no longer blocked by BLOCKER)
+gh api graphql -f query='mutation { removeBlockedBy(input: {issueId: "ISSUE_ID", blockingIssueId: "BLOCKER_ID"}) { clientMutationId } }'
 ```
 
 ### Domain docs
