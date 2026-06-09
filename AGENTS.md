@@ -8,7 +8,7 @@ Issues live in GitHub Issues (`DC23/book-munger`). See `docs/agents/issue-tracke
 
 Default DC23 label vocabulary — no overrides. See `docs/agents/triage-labels.md`.
 
-When creating issues: always apply `needs-triage`. Also apply `roadmap` for planned features and maintainer-initiated work.
+When creating issues: always apply `needs-triage`. Also apply `roadmap` for planned features and maintainer-initiated work. Apply `epic` (alongside `roadmap`) for parent issues that track a collection of sub-issues — epics have no implementation surface and should not be put through the triage state machine. Use `/grill-with-docs` or plan mode to work on an epic instead.
 
 When creating groups of related issues (epic breakdowns, dependency chains), set parent and blocked-by relationships via `gh api graphql`. The `gh issue` subcommand has no native flags for this. Verified mutations:
 
