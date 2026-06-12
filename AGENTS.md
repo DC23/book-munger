@@ -1,3 +1,13 @@
+# book-munger agent instructions
+
+## Python environment
+
+All Python work uses the local virtual environment at `.venv/`. Never install packages to system Python.
+
+- Activate: `source .venv/bin/activate`
+- Run tools directly: `.venv/bin/python`, `.venv/bin/pytest`, `.venv/bin/pip`
+- Install deps after creating/cloning: `pip install -e .[dev]` (with venv active)
+
 ## Agent skills
 
 ### Issue tracker
