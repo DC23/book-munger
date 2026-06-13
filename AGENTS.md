@@ -39,6 +39,10 @@ gh api graphql -f query='mutation { removeSubIssue(input: {issueId: "PARENT_ID",
 gh api graphql -f query='mutation { removeBlockedBy(input: {issueId: "ISSUE_ID", blockingIssueId: "BLOCKER_ID"}) { clientMutationId } }'
 ```
 
+### Plans
+
+Implementation plans live in `docs/plans/`. Named `YYYY-MM-DD-HHMM-description.md`. An index entry must be appended to `docs/plans/INDEX.md` when saving a plan. See `docs/agents/plans.md`.
+
 ### Domain docs
 
 Single-context layout: `docs/DOMAIN_DICTIONARY.md`, `docs/adr/` for decisions. See `docs/agents/domain.md`.

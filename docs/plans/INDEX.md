@@ -1,0 +1,2 @@
+- [2026-06-13-1745-text-loader-reader-pattern.md](2026-06-13-1745-text-loader-reader-pattern.md) — Reader pattern, PlainTextReader, HtmlReader, reader_for factory, issue #3
+- [2026-06-13-2011-issue-6-counter-filter.md](2026-06-13-2011-issue-6-counter-filter.md) — word frequency counter, stopword filter, count(), apply_stopwords(), issue #6
