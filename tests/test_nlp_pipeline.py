@@ -1,5 +1,5 @@
 import pytest
-from book_munger.pipeline import process
+from book_munger.nlp_pipeline import process
 
 _ALLOWED_POS = {"NOUN", "VERB", "ADJ", "ADV", "PROPN", "PRON", "CCONJ", "SCONJ", "ADP", "INTJ"}
 
@@ -48,7 +48,7 @@ def test_process_lemmatises_noun():
 
 
 def test_process_model_cached():
-    from book_munger.pipeline import _load_model
+    from book_munger.nlp_pipeline import _load_model
     _load_model.cache_clear()
     list(process("Hello world"))
     list(process("Another sentence"))
