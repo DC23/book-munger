@@ -27,7 +27,5 @@
 
 ## Ranker
 
-**Status:** pending
+**Status:** promoted
 **Source:** docs/handoffs/2026-06-13-2216-ranker-base-class-and-frequency-ranker.md
-
-Named in the Pipeline definition ("Reader → NLP Pipeline → Counter → Filter → Ranker") but not yet given its own dictionary entry. The Ranker is the final Pipeline stage; it receives a POS bucket and returns an ordered list of lemmas for inclusion in the Word Table. The strategy abstraction allows multiple ranking approaches (frequency, distinctiveness, etc.).
