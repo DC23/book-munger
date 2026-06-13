@@ -42,3 +42,7 @@ gh api graphql -f query='mutation { removeBlockedBy(input: {issueId: "ISSUE_ID",
 ### Domain docs
 
 Single-context layout: `docs/DOMAIN_DICTIONARY.md`, `docs/adr/` for decisions. See `docs/agents/domain.md`.
+
+## Testing conventions
+
+Do not use real Project Gutenberg books as test fixtures. Copyright status outside the US is ambiguous, and PG silently re-encodes old files to UTF-8 during maintenance updates, making them unreliable for encoding tests. Use synthetic fixtures generated programmatically (e.g. via pytest `tmp_path`) with Lorem Ipsum body text and minimal PG-format structure.
