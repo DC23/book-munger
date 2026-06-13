@@ -1,2 +1,3 @@
 - [2026-06-13-1745-text-loader-reader-pattern.md](2026-06-13-1745-text-loader-reader-pattern.md) — Reader pattern, PlainTextReader, HtmlReader, reader_for factory, issue #3
 - [2026-06-13-2011-issue-6-counter-filter.md](2026-06-13-2011-issue-6-counter-filter.md) — word frequency counter, stopword filter, count(), apply_stopwords(), issue #6
+- [2026-06-13-2200-issue-7-ranker-base-class-and-frequency-ranker.md](2026-06-13-2200-issue-7-ranker-base-class-and-frequency-ranker.md) — Ranker strategy abstraction, BaseRanker, FrequencyRanker, issue #7
