@@ -22,7 +22,5 @@
 
 ## Stopword
 
-**Status:** pending
+**Status:** promoted
 **Source:** docs/handoffs/2026-06-13-2022-counter-filter.md
-
-A word excluded from frequency counts before ranking. Loaded from an optional user-supplied file (one word per line, `#` comment lines). Applied after counting, before ranking. Formalised in `src/book_munger/filter.py`.

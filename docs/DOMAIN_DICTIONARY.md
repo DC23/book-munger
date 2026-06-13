@@ -16,6 +16,10 @@ A pipeline component that loads a Book from disk and returns cleaned body text a
 
 **Relationships:** Introduced in ADR 0005. Concrete implementations include `PlainTextReader` and `HtmlReader`; `reader_for()` selects the appropriate Reader for a given file.
 
+## Stopword
+
+A word excluded from the Word Table before ranking — common or otherwise unwanted words (e.g. "the", "a", "is") that would clutter the output. Supplied as an optional user-provided file, one word per line. In NLP, "stopword" is the standard term for words filtered out of analysis; book-munger uses it in that sense.
+
 ## Word Table
 
 The core output artefact of book-munger — a curated list of words drawn from a Source Text, selected and ranked for thematic creative use. Analogous to Mythic Meaning Tables and spark tables (Electric Bastionland). The ranking method is not fixed: frequency, distinctiveness, and other criteria are all valid axes depending on the Ranker used.
