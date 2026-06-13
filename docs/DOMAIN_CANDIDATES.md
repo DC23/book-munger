@@ -27,3 +27,10 @@ A pipeline component that loads a Source Text from disk and returns cleaned body
 **Source:** docs/handoffs/2026-06-13-1820-nlp-pipeline.md
 
 The NLP processing stage that receives body text from a Reader and yields (lemma, pos) pairs for downstream frequency counting. Implemented in `src/book_munger/pipeline.py`. Distinct from the broader word-processing pipeline (Reader → Pipeline → ...) of which it is one stage.
+
+## Stopword
+
+**Status:** pending
+**Source:** docs/handoffs/2026-06-13-2022-counter-filter.md
+
+A word excluded from frequency counts before ranking. Loaded from an optional user-supplied file (one word per line, `#` comment lines). Applied after counting, before ranking. Formalised in `src/book_munger/filter.py`.

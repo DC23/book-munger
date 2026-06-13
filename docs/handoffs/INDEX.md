@@ -4,3 +4,4 @@
 - [2026-06-13-1745-text-loader-reader-pattern.md](2026-06-13-1745-text-loader-reader-pattern.md) — issue #3, Reader pattern, PlainTextReader, HtmlReader, reader_for, beautifulsoup4, issue #4 closed, ADR 0004, ADR 0005
 - [2026-06-13-1810-text-loader-implementation.md](2026-06-13-1810-text-loader-implementation.md) — issue #3 implemented, TDD, readers package, process CLI command, commit ded78c4, synthetic fixture approach confirmed
 - [2026-06-13-1820-nlp-pipeline.md](2026-06-13-1820-nlp-pipeline.md) — issue #5 implemented, TDD, pipeline.py, process(), lru_cache, spaCy, en_core_web_sm, lemma/POS, commit 84daa31
+- [2026-06-13-2022-counter-filter.md](2026-06-13-2022-counter-filter.md) — issue #6 implemented, TDD, counter.py, filter.py, count(), apply_stopwords(), stopword file format, commits 98d432e/3861d66
