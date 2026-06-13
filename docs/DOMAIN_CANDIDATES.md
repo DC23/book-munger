@@ -20,3 +20,10 @@ An input document (book or similar long-form text) that the tool processes to pr
 **Source:** docs/handoffs/2026-06-13-1745-text-loader-reader-pattern.md
 
 A pipeline component that loads a Source Text from disk and returns cleaned body text as a plain string. Format-specific boilerplate removal is the Reader's responsibility. Introduced in ADR 0005.
+
+## Pipeline
+
+**Status:** pending
+**Source:** docs/handoffs/2026-06-13-1820-nlp-pipeline.md
+
+The NLP processing stage that receives body text from a Reader and yields (lemma, pos) pairs for downstream frequency counting. Implemented in `src/book_munger/pipeline.py`. Distinct from the broader word-processing pipeline (Reader → Pipeline → ...) of which it is one stage.
