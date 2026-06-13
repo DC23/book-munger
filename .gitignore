@@ -219,3 +219,6 @@ __marimo__/
 
 .*/
 *-lock.json
+
+# books for testing
+books/
