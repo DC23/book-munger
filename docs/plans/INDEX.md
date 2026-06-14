@@ -1,3 +1,7 @@
 - [2026-06-13-1745-text-loader-reader-pattern.md](2026-06-13-1745-text-loader-reader-pattern.md) — Reader pattern, PlainTextReader, HtmlReader, reader_for factory, issue #3
 - [2026-06-13-2011-issue-6-counter-filter.md](2026-06-13-2011-issue-6-counter-filter.md) — word frequency counter, stopword filter, count(), apply_stopwords(), issue #6
 - [2026-06-13-2200-issue-7-ranker-base-class-and-frequency-ranker.md](2026-06-13-2200-issue-7-ranker-base-class-and-frequency-ranker.md) — Ranker strategy abstraction, BaseRanker, FrequencyRanker, issue #7
+- [2026-06-14-0000-issue-8-html-ranker-report.md](2026-06-14-0000-issue-8-html-ranker-report.md) — HTML ranker report, render(), Jinja2 template, reporters module, issue #8
+- [2026-06-14-0001-issue-11-distinctiveness-ranker.md](2026-06-14-0001-issue-11-distinctiveness-ranker.md) — DistinctivenessRanker, wordfreq zipf_frequency, distinctiveness scoring, issue #11
+- [2026-06-14-0002-issue-9-markdown-writer.md](2026-06-14-0002-issue-9-markdown-writer.md) — BaseWriter ABC, MarkdownWriter, combined and split output modes, issue #9
+- [2026-06-14-0003-issue-10-cli-interface.md](2026-06-14-0003-issue-10-cli-interface.md) — CLI single command, book-munger INPUT, combined/split/html-report flags, issue #10

@@ -29,3 +29,13 @@
 
 **Status:** promoted
 **Source:** docs/handoffs/2026-06-13-2216-ranker-base-class-and-frequency-ranker.md
+
+## Writer
+
+**Status:** promoted
+**Source:** docs/handoffs/2026-06-14-1115-issue-drift-checks-and-triage.md
+
+## Reporter
+
+**Status:** promoted
+**Source:** docs/handoffs/2026-06-14-1115-issue-drift-checks-and-triage.md

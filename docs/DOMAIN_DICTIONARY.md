@@ -29,3 +29,13 @@ The final Pipeline component — receives a single POS bucket (`{lemma: count}`)
 ## Word Table
 
 The core output artefact of book-munger — a curated list of words drawn from a Source Text, selected and ranked for thematic creative use. Analogous to Mythic Meaning Tables and spark tables (Electric Bastionland). The ranking method is not fixed: frequency, distinctiveness, and other criteria are all valid axes depending on the Ranker used.
+
+## Writer
+
+The output strategy component that serialises a ranked Word Table to disk. Mirrors the Reader pattern on the output side: `BaseWriter` is the abstract base; `MarkdownWriter` is the first concrete implementation. Called after the Ranker in the Pipeline.
+
+**Relationships:** Consumes Ranker output (`{pos: [lemma, ...]}`) and writes the Word Table in the chosen format. Supports combined output (all POS in one file) and split output (one file per POS).
+
+## Reporter
+
+An optional diagnostic component that generates a self-contained HTML file from the full counts dict and Ranker output. Distinct from Writer: the Reporter produces an analytical artefact for human review, not the primary Word Table output. Sits outside the Pipeline (the Pipeline ends at Ranker).
