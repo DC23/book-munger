@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Word Ranking Report{% if ranker_name %} — {{ ranker_name }}{% endif %}</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: 2rem auto; color: #222; }
+    h1 { border-bottom: 2px solid #333; padding-bottom: 0.3em; }
+    h2 { margin-top: 2rem; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.4em 0.8em; text-align: left; }
+    th { background: #f0f0f0; }
+    tr:nth-child(even) { background: #fafafa; }
+  </style>
+</head>
+<body>
+  <h1>Word Ranking Report{% if ranker_name %} — {{ ranker_name }}{% endif %}</h1>
+
+  <h2>Summary</h2>
+  <p>Total tokens processed: {{ total_tokens }}</p>
+  <p>Vocabulary size: {{ vocab_size }}</p>
+  <table>
+    <thead><tr><th>POS</th><th>Lemma count</th><th>Token count</th></tr></thead>
+    <tbody>
+    {% for pos, lemma_count, token_count in pos_breakdown %}
+      <tr><td>{{ pos }}</td><td>{{ lemma_count }}</td><td>{{ token_count }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  {% for pos, words in ranked.items() %}
+  <h2>{{ pos }}</h2>
+  <table>
+    <thead><tr><th>Rank</th><th>Lemma</th><th>Count</th></tr></thead>
+    <tbody>
+    {% for lemma in words %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ lemma }}</td>
+        <td>{{ counts[pos][lemma] }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endfor %}
+</body>
+</html>
