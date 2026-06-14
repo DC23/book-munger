@@ -30,6 +30,10 @@ Options:
 
 `cli.py` becomes a `@click.command()` (not a group). The existing `process` subcommand stub is replaced entirely.
 
+## Spec gap flagged for agent: `--ranker` class dispatch
+
+The `--ranker` option accepts `frequency | distinctive` (strings), but the pipeline needs a `BaseRanker` instance. Following the `reader_for()` pattern, implement a `ranker_for(name: str) -> BaseRanker` factory in `src/book_munger/rankers/__init__.py`. Valid names: `"frequency"`, `"distinctive"`. Raise a clear error for unrecognised names. Test the factory and the error path.
+
 ## Spec gap flagged for agent: `--pos` name mapping
 
 The `--pos` option accepts human-readable names (`noun`, `adjective`) but the NLP pipeline uses spaCy universal POS tags (`NOUN`, `ADJ`). The implementing agent must define and test the mapping table. Canonical spaCy tags in use: `NOUN`, `VERB`, `ADJ`, `ADV`, `PROPN`, `PRON`, `CCONJ`, `SCONJ`, `ADP`, `INTJ`.
