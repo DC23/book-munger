@@ -222,3 +222,6 @@ __marimo__/
 
 # books for testing
 books/
+
+# Output tables
+tables/
