@@ -39,3 +39,10 @@
 
 **Status:** promoted
 **Source:** docs/handoffs/2026-06-14-1115-issue-drift-checks-and-triage.md
+
+## Blended Ranker
+
+**Status:** pending
+**Source:** docs/handoffs/2026-06-15-2116-output-quality-fixes.md
+
+A Ranker variant that unions the top-N output of FrequencyRanker and DistinctivenessRanker, deduplicates, and sorts alphabetically. Named in issue #32 as a distinct strategy alongside the existing two.

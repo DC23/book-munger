@@ -5,3 +5,4 @@
 - [2026-06-14-0001-issue-11-distinctiveness-ranker.md](2026-06-14-0001-issue-11-distinctiveness-ranker.md) — DistinctivenessRanker, wordfreq zipf_frequency, distinctiveness scoring, issue #11
 - [2026-06-14-0002-issue-9-markdown-writer.md](2026-06-14-0002-issue-9-markdown-writer.md) — BaseWriter ABC, MarkdownWriter, combined and split output modes, issue #9
 - [2026-06-14-0003-issue-10-cli-interface.md](2026-06-14-0003-issue-10-cli-interface.md) — CLI single command, book-munger INPUT, combined/split/html-report flags, issue #10
+- [2026-06-15-2116-output-quality-fixes.md](2026-06-15-2116-output-quality-fixes.md) — output quality, punctuation guard, stopwords infrastructure, column ordering, blended ranker, issues #27–#32
